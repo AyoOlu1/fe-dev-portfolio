@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&gt;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
@@ -22,8 +22,7 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./Contact.html">Contact</a></li>
-          <li><a href="./Login.html">Login</a></li>
-          <li><a href="./Sign-up.html">Sign Up</a></li>
+          <li><a href="./Contact.html">Projects</a></li>
         </ul>
       </nav>
     </header>
@@ -39,10 +38,10 @@
         </div>
         <div>
           <h1>Hi, my name is Victor</h1>
-          <p>I'm a Frontend Developer</p>
+          <p class="hero__paragraph">I'm a Frontend Developer</p>
           <div class="hero__icons">
-            <img src="./assets/linkedin-in-light.svg" alt="">
-            <img src="./assets/github-light.svg" alt="">
+            <img src="./assets/linkedin-in-light.svg" alt="" />
+            <img src="./assets/github-light.svg" alt="" />
             <!-- fb, twitter, linkedin -->
           </div>
         </div>
@@ -57,7 +56,10 @@
               class="profile__image"
             />
           </figure>
-          <p class="./assets/profile__info">Hi, my name is Victor</p>
+          <p class="./assets/profile__info">
+            I'm a seasoned Frontend web developer who offers excellent designs
+            and codes that are responsive and optimized for seo.
+          </p>
         </div>
       </section>
 
@@ -79,31 +81,29 @@
       <section class="contact">
         <h2>Contact Me</h2>
         <form action="">
-          <form action="">
-        <div>
-          <label>Full Name</label>
-          <input type="text" name="fname" placeholder="Dave Shepherd" />
-        </div>
-        <div>
-          <label>Email address</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="email@example.com"
-            class="email"
-          />
-        </div>
-        <div>
-          <label>Password</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="*******"
-            class="password"
-          />
-        </div>
-        <button type="submit">Create a free account</button>
-
+          <div>
+            <label>Name</label>
+            <input type="text" name="fname" placeholder="Dave Shepherd" />
+          </div>
+          <div>
+            <label>Email address</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              class="email"
+            />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
         </form>
       </section>
     </main>
