@@ -42,14 +42,14 @@ nav li {
   margin-left: 0.3rem;
 }
 main {
-  margin: 2rem;
+  /* margin: 2rem; */
   text-align: center;
 }
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 3rem;
 }
 .hero__img--rounded {
   border-radius: 50%;
@@ -58,6 +58,7 @@ main {
 }
 .hero__paragraph {
   color: #f7f7f2;
+  font-size: 25px;
 }
 .profile {
   background-color: #f7f7f2;
@@ -67,10 +68,15 @@ main {
   display: flex;
   flex-direction: column;
 }
-.profile > p {
+.profile__info {
+  text-align: left;
+  padding: 0px 20px;
+  padding-bottom: 20px;
+}
+/* .profile > p {
   max-width: 400px;
   padding: 20px;
-}
+} */
 .profile__image {
   width: 200px;
   height: 200px;
@@ -82,7 +88,8 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 500px;
+  width: 350px;
+  flex-wrap: wrap;
 }
 .skills__img li {
   background-color: #f7f7f2;
@@ -90,11 +97,26 @@ main {
   margin-bottom: 20px;
   font-size: larger;
 }
+.projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cards {
+  background-color: #f7f7f2;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-img {
+  width: 350px;
+}
 .contact {
   text-align: left;
   margin-bottom: 20px;
 }
-.contact > h2 {
+.contact {
   color: #f7f7f2;
 }
 input {
@@ -114,18 +136,7 @@ label {
 textarea {
   margin-top: 10px;
 }
-/* .email {
-  background-image: url("../assets/email-icon.png");
-  background-position-x: 90%;
-  background-position-y: 50%;
-  background-repeat: no-repeat;
-}
-.password {
-  background-image: url("../assets/eye-icon.png");
-  background-position-x: 90%;
-  background-position-y: 50%;
-  background-repeat: no-repeat;
-} */
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -142,4 +153,25 @@ button {
   font-size: 16px;
   line-height: 22px;
   margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile > div {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    padding: 0 200px;
+  }
+  .hero {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
 }
