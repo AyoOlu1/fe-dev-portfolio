@@ -11,8 +11,9 @@ body {
 }
 h1 {
   color: #f7f7f2;
-  font-size: 26px;
+  font-size: 2rem;
   font-weight: 400;
+  margin-top: 2rem;
 }
 h2 {
   text-align: left;
@@ -49,7 +50,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3rem;
+  padding-bottom: 5rem;
+  background-color: #121113;
 }
 .hero__img--rounded {
   border-radius: 50%;
@@ -63,6 +65,9 @@ main {
 .profile {
   background-color: #f7f7f2;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .profile > div {
   display: flex;
@@ -71,7 +76,7 @@ main {
 .profile__info {
   text-align: left;
   padding: 0px 20px;
-  padding-bottom: 20px;
+  padding-bottom: 3rem;
 }
 /* .profile > p {
   max-width: 400px;
@@ -108,9 +113,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 7px 0px black;
 }
 .card-img {
   width: 350px;
+  border-bottom: 1px solid black;
 }
 .contact {
   text-align: left;
@@ -145,7 +153,7 @@ textarea {
 
 button {
   border: none;
-  padding: 15px 40px;
+  padding: 12px 40px;
   font-weight: bold;
   color: #121113;
   background-color: #f7f7f2;
@@ -168,10 +176,16 @@ button {
 
 @media (min-width: 800px) {
   main {
-    padding: 0 200px;
+    padding: 0 52px;
   }
   .hero {
     flex-direction: row-reverse;
     justify-content: space-around;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    padding: 0 200px;
   }
 }
