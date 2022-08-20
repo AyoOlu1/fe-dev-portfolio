@@ -62,6 +62,9 @@ main {
   color: #f7f7f2;
   font-size: 25px;
 }
+.hero__icons a {
+  margin-right: 1rem;
+}
 .profile {
   background-color: #f7f7f2;
   margin-bottom: 20px;
@@ -74,7 +77,6 @@ main {
   flex-direction: column;
 }
 .profile__info {
-  text-align: left;
   padding: 0px 20px;
   padding-bottom: 3rem;
 }
@@ -88,6 +90,7 @@ main {
 }
 .skills > h2 {
   color: #f7f7f2;
+  text-align: center;
 }
 .skills__img {
   display: flex;
@@ -107,6 +110,10 @@ main {
   align-items: center;
   flex-direction: column;
 }
+
+.projects > h2 {
+  color: #fafafa;
+}
 .cards {
   background-color: #f7f7f2;
   width: 350px;
@@ -115,6 +122,7 @@ main {
   align-items: center;
   margin-bottom: 30px;
   box-shadow: 0px 0px 7px 0px black;
+  padding-bottom: 1rem;
 }
 .card-img {
   width: 350px;
@@ -150,17 +158,30 @@ textarea {
   justify-content: center;
   margin: 40px 0 10px 0;
 }
+form button {
+  background-color: #fafafa;
+  color: #121113;
+}
 
 button {
   border: none;
   padding: 12px 40px;
   font-weight: bold;
-  color: #121113;
-  background-color: #f7f7f2;
+  background-color: #121113;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   margin-top: 10px;
+}
+button > a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+footer {
+  color: #fafafa;
+  text-align: center;
+  margin-top: 4rem;
 }
 
 @media (min-width: 600px) {
@@ -184,7 +205,13 @@ button {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
+  main {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 1200px) {
   main {
     padding: 0 200px;
   }
